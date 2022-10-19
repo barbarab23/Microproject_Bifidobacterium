@@ -1,3 +1,5 @@
+setwd(getSrcDirectory()[1])
+
 # Check library installs  -------------------------------------------------
 
 package_list <- c('tidyverse', 'reshape2', 'viridis', 'cowplot')
