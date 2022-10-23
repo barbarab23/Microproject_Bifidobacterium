@@ -33,9 +33,12 @@ for (i in 1:length(bifido_list)){
   #select data to plot. Any_of selects column using string.
   df2 <- bifido_heat %>% select(weeks, baby_id, any_of(col_name))
   
+  #setting same limits on color scale for all graphs by setting the low, mid and high colors using viridis color scheme, 
+  #setting a fixed break, and limits going from 0-100%
   fig <- ggplot(df2, aes_string(x = 'weeks', y='baby_id', fill=col_name))+
     geom_tile()+
-    scale_fill_viridis()+
+    scale_fill_gradient2(low = viridis(3)[1], mid= viridis(3)[2], high =viridis(3)[3], 
+                         midpoint=50, breaks=seq(0,100,25), limits=c(0,100))+
     ggtitle(fig_title)+
     xlab('Weeks after birth')+
     ylab('Baby ID')+
