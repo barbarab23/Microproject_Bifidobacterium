@@ -33,8 +33,8 @@ family_Csection_percent <- group_percent(family_Csection_bin)
 bifido_vaginal_percent <- group_percent(bifido_vaginal_bin)
 bifido_Csection_percent <- group_percent(bifido_Csection_bin)
 
-family_bacteria_mean2 <- getMean2percent(family_percent)
-bifido_bacteria_mean2 <- getMean2percent(bifido_percent)
+family_bacteria_mean2 <- getMean2percent(family_percent) #used for subplots also
+bifido_bacteria_mean2 <- getMean2percent(bifido_percent) #used for subplots also
 
 family_prepared <- prepareDataFig(data = family_percent, bacteria_mean2 = family_bacteria_mean2)
 bifido_prepared <- prepareDataFig(data = bifido_percent, bacteria_mean2 = bifido_bacteria_mean2)
