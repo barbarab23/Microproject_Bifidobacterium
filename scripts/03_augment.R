@@ -46,8 +46,6 @@ bifido_vaginal_prep <- prepareDataFig(data = bifido_vaginal_percent, bacteria_me
 bifido_Csection_prep <- prepareDataFig(data = bifido_Csection_percent, bacteria_mean2 = bifido_bacteria_mean2)
 
 #calculate percentage. g__Bifidobacterium contains the relative abundance for all bifido species. Replace generated NAs with 0. Group by weeks and baby id
-# bifido_heatmap_prep <- bifido_heatmap %>% mutate(across(c(4:ncol(bifido_heatmap)), .fns = ~./g__Bifidobacterium*100)) %>% select(-g__Bifidobacterium) %>%
-#   replace(is.na(.),0)
 bifido_heatmap_prep <- bifido_heatmap %>% mutate(across(-c(weeks, baby_id), .fns = ~./g__Bifidobacterium*100)) %>% select(-g__Bifidobacterium) %>%
   replace(is.na(.),0) 
 
