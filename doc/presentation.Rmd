@@ -123,7 +123,7 @@ Bin by weeks and clean-up
 head(family_vaginal_bin %>% select(1:4), n=3)
 
 ```
-Same steps where performed with filtering for C-section
+Same steps were performed with filtering for C-section
 
 ## Tidying data
 
@@ -140,7 +140,7 @@ Bin by weeks and clean-up
 head(bifido_Csection_bin %>% select(1:4), n=3)
 
 ```
-Same steps where performed with filtering for Vaginal
+Same steps were performed with filtering for Vaginal
 
 ## Tidying data
 **Bifido heatmap data:**
@@ -162,7 +162,7 @@ Exploring the data:
 
 # Results
 ## Family level abundance
-Calculating the relative abundance at family level. Families with mean ≤ 2% where merged into 'Other'
+Calculating the relative abundance at family level. Families with mean ≤ 2% were merged into 'Other'
 
 ```{r, out.width='100%', fig.align='center'}
 include_graphics("../results/04_family_fig.png", error = F)
@@ -178,7 +178,7 @@ include_graphics("../results/04_family_sub_fig.png", error = F)
 
 
 ## Bifido sp. level abundance
-Calculating the relative abundance at Bifidobacterium species level. Species with mean ≤ 2% where merged into 'Other'
+Calculating the relative abundance at Bifidobacterium species level. Species with mean ≤ 2% were merged into 'Other'
 
 ```{r, out.width='100%', fig.align='center'}
 include_graphics("../results/04_bifido_fig.png", error = F)
