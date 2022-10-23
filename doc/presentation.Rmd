@@ -17,12 +17,15 @@ library(knitr)
 
 **Henrick et al. 2021:** Bifidobacteria-mediated immune system imprinting early in life
 
-> - **Investigation:** The effects of bifidobacteria and HMO-utilization genes during the first months of life 
+> - **Investigation:** The effects of bifidobacteria and human milk oligosaccharides (HMO)-utilization genes during the first months of life 
 -  **Methods:** Longitudinal systems immunology analysis combined with metagenomic profiling
 
 **Focus in this data analysis:**
 
 -  Shotgun metagenomic sequencing of longitudinal fecal samples of infants
+
+
+
 
 ## Study design
 
