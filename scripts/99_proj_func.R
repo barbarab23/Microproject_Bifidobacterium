@@ -104,7 +104,6 @@ figSubGutMicrobiome <- function(data_1, data_2, main_title = NULL) {
     fig_Csection + theme(axis.title.y = element_blank(),
                          plot.margin = unit(c(0,0,0.5,2), 'cm')),
     nrow = 2, 
-    labels = 'auto',
     align = 'v'
   )
   
