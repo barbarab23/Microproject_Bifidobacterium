@@ -16,7 +16,7 @@ source(file = "./scripts/99_proj_func.R")
 bifido_heat <-  read.table("./data/03_bifido_heatmap_prep.tsv", sep = '\t', header = TRUE) %>% group_by(weeks, baby_id)
 
 #convert baby_id to character so it is not treated as an integer by ggplot
-bifido_heat$baby_id <- as.character(bifido_heat$baby_id)
+bifido_heat <- bifido_heat %>% mutate(baby_id = as.factor(baby_id))
 
 
 # Visualize data and write data -------------------------------------------

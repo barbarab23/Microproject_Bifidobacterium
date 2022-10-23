@@ -1,4 +1,5 @@
-setwd(getSrcDirectory()[1])
+
+#### set to working directory ###########################################
 
 # Check library installs  -------------------------------------------------
 
